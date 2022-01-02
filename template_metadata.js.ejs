@@ -1,0 +1,9 @@
+
+
+export default ({ dist }) => {
+    <% variants && variants.forEach(element => { %>
+    const <%= element %>  = {}
+    <% }) %>
+
+    return {<%= variants && variants.join(', ') %> }
+}
